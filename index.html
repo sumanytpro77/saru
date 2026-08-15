@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Face Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js">
+    </script>
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="security-card">
+
+            <h1>🔐 Face Security</h1>
+
+            <p class="subtitle">
+                Scan your face to continue
+            </p>
+
+            <div class="camera-box">
+
+                <video id="video"
+                       autoplay
+                       muted>
+                </video>
+
+                <div class="scan-line"></div>
+
+            </div>
+
+            <div class="status">
+
+                <p id="faceStatus">
+                    📷 Face: Waiting...
+                </p>
+
+            </div>
+
+            <button id="startButton">
+                Start Face Authentication
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
